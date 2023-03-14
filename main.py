@@ -75,5 +75,3 @@ async def send_whatsapp_order(booking: Booking):
     if res.status_code == 200:
         return {"msg": "message sent successfully"}
     return {"error": "message sending failed"}
-
-#gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker
